@@ -208,12 +208,12 @@
 
 	  var between = [];
 
-	  days > 0 ? between.push(days + ' day' + (days > 1 ? 's' : '')) : false;
-	  hours > 0 ? between.push(hours + ' hour' + (hours > 1 ? 's' : '')) : false;
-	  minutes > 0 ? between.push(minutes + ' minute' + (minutes > 1 ? 's' : '')) : false;
-	  seconds > 0 ? between.push(seconds + ' second' + (seconds > 1 ? 's' : '')) : false;
+	  days > 0 ? between.push(days + ':') : false;
+	  hours > 0 ? between.push(hours + ':') : false;
+	  minutes > 0 ? between.push(minutes + ':') : false;
+	  seconds > 0 ? between.push(seconds) : false;
 
-	  return between.join(' ');
+	  return between.join('');
 	};
 
 	module.exports = DateBetween;
